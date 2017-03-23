@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="gc200348171@sql.computerstudi.es" uuid="fdad7de2-3d94-4977-aa14-1be010bbf862">
+      <database-info product="MySQL" version="5.6.28-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>gc200348171</user-name>
+      <introspection-schemas>*:gc200348171</introspection-schemas>
+    </data-source>
+  </component>
+</project>
