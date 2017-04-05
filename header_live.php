@@ -22,10 +22,10 @@
             $pages = $cmd -> fetchAll();
 
             foreach ($pages as $page){
-                echo '<li><a href="default.php?id=' . $page['id'] . '">'.$page['page_title'].'</a>';
+                echo '<li><a href="page.php?id=' . $page['id'] . '">'.$page['page_title'].'</a>';
             }
 
-            $conn = null;
+
         ?>
 
     </ul>
