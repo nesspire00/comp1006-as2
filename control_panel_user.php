@@ -1,6 +1,6 @@
 <?php ob_start();
 $title = 'Manage Users';
-require_once('header.php');
+require_once('header_cms.php');
 require_once('auth.php');
 
 // shows the error message if there was an error while deleting the user

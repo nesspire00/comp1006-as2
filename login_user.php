@@ -21,7 +21,7 @@ if (password_verify($password, $user['password'])) {
     session_start();
     $_SESSION['userID'] = $user['userID'];
     $_SESSION['username'] = $username;
-    header('location:control.php');
+    header('location:cms.php');
 } else {
 
     header('location:login.php?invalid=true');

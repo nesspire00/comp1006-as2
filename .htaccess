@@ -1,1 +1,1 @@
-ErrorDocument 404 http://localhost/as2/404.php
+ErrorDocument 404 http://as2.dev/404.php

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <ul class="nav navbar-nav">
         <li><a href="default.php" class="navbar-brand">COMP1006 - Assignment 2 (CMS)</a></li>
 
@@ -19,13 +19,13 @@
         if (empty($_SESSION['userID'])) {
             echo '    
                 <li><a href="register.php">Register</a></li>
-                <li><a href="login.php">Login</a></li>';
+                <li><a href = "default.php"><button class="btn navbar-btn btn-info">Live Webpage</button></a ></li>';
         } else {
             echo '
                 </ul>
                 <ul class="nav navbar-nav">
-                    <li><a href = "logout.php" >Logout</a ></li>
-                    <li><a href = "control.php" >Control Panel</a ></li>';
+                    <li><a href = "logout.php"><button class="btn navbar-btn btn-danger">Logout</button></a ></li>
+                    <li><a href = "cms.php"><button class="btn navbar-btn btn-info">Control Panel</button></a ></li>';
         } ?>
     </ul>
 </nav>

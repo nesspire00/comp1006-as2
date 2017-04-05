@@ -1,6 +1,6 @@
 <?php
 $title = 'Oops! It`s a 404 error';
-require_once('header.php');
+require_once('header_cms.php');
 ?>
 
 <div class="jumbotron">

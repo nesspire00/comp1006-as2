@@ -1,6 +1,6 @@
 <?php
 $title = 'Register / update user';
-require_once('header.php');
+require_once('header_cms.php');
 
 $username = "";
 $usersID = null;

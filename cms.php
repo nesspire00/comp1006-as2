@@ -1,6 +1,6 @@
 <?php
 $title = 'Assignment 2 CMS';
-require_once('header.php');
+require_once('header_cms.php');
 require_once('auth.php');
 ?>
 

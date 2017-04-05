@@ -1,6 +1,6 @@
 <?php
 $title = 'Login';
-require_once('header.php');
+require_once('header_cms.php');
 
 //show error message if the user failed to log in the previous time
 if (!empty($_GET['invalid'])) {
