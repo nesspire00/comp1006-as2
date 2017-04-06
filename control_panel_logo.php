@@ -11,15 +11,18 @@ if (!empty($_GET['error'])) {
 }
 ?>
 <div class="container">
+    <h1>Edit website logo</h1>
     <form action="savelogo.php" method="post" enctype="multipart/form-data">
         <label for="logo">Logo: </label>
         <input type="file" name="logo" id="logo"/>
         <br/>
         <button class="btn btn-success">Save changes</button>
     </form>
+    <br/>
     <?php
     if (file_exists('logo/logo')) {
-        echo '<img src="logo/logo" width="200" height="50">
+        echo '<p>Preview: </p><img src="logo/logo" width="200" height="50">
+<br/>
 <br/>
 <a href="savelogo.php?delete=true"><button class="btn btn-danger">Delete logo</button></a>';
     }

@@ -14,6 +14,7 @@ try {
     $user = $cmd->fetch();
 } catch (exception $e) {
     header('location:error.php');
+    mail('nesspire00@gmail.com', 'Crash on the website', $e);
 }
 //verify users password, if it doesnt match - send them to the login screen with an error message
 if (password_verify($password, $user['password'])) {
@@ -28,6 +29,6 @@ if (password_verify($password, $user['password'])) {
     exit();
 }
 
-// $conn = null;
+ $conn = null;
 
 ob_flush();

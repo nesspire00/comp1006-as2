@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar navbar-inverse">
     <ul class="nav navbar-nav">
-        <li><a href="default.php" class="navbar-brand">COMP1006 - Assignment 2 (CMS)</a></li>
+        <li><a href="cms.php" class="navbar-brand">COMP1006 - Assignment 2 (CMS)</a></li>
 
         <?php
         // show buttons depending on if user is logged in or not
@@ -19,13 +19,15 @@
         if (empty($_SESSION['userID'])) {
             echo '    
                 <li><a href="register.php">Register</a></li>
-                <li><a href = "default.php"><button class="btn navbar-btn btn-info">Live Webpage</button></a ></li>';
+                <li><a href="login.php">Log in</a></li>
+                <li><a href = "default.php">Live Webpage</a ></li>';
         } else {
             echo '
                 </ul>
                 <ul class="nav navbar-nav">
-                    <li><a href = "logout.php"><button class="btn navbar-btn btn-danger">Logout</button></a ></li>
-                    <li><a href = "cms.php"><button class="btn navbar-btn btn-info">Control Panel</button></a ></li>';
+                    <li><a href = "logout.php">Logout</a ></li>
+                    <li><a href = "cms.php">Control Panel</a ></li>
+                    <li><a href = "default.php">Live Webpage</a ></li>';
         } ?>
     </ul>
 </nav>

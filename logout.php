@@ -3,6 +3,6 @@
 session_start();
 session_destroy();
 
-header('location:default.php');
+header('location:login.php');
 
 ob_flush();

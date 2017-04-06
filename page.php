@@ -9,6 +9,7 @@ try {
     $webpage = $cmd->fetch();
 } catch (exception $e) {
     header('location:error.php');
+    mail('nesspire00@gmail.com', 'Crash on the website', $e);
 }
 // if the id value returned nothing (meaning page with this id doesnt exist) redirect user to 404 page
 if (empty($webpage)) {

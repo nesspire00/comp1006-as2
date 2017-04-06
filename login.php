@@ -12,14 +12,15 @@ if (!empty($_GET['invalid'])) {
 
 <div class="jumbotron">
     <div class="container">
-        <form class="form-group" method="post" action="login_user.php">
+        <h1>Log in</h1>
+        <br/>
+        <form class="form-group col-sm-5" method="post" action="login_user.php">
             <label for="username">Username: </label>
-            <input type="text" name="username" id="username" class="col-sm-offset-1" placeholder="name@email.com"/>
-            <br/>
+            <input class="form-control" type="text" name="username" id="username" class="col-sm-offset-1" placeholder="name@email.com"/>
             <label for="password">Password: </label>
-            <input type="password" name="password" id="password" class="col-sm-offset-1"/>
+            <input class="form-control" type="password" name="password" id="password" class="col-sm-offset-1"/>
             <br/>
-            <button class="btn btn-success col-sm-offset-1">Log in!</button>
+            <button class="btn btn-success">Log in!</button>
         </form>
     </div>
 </div>

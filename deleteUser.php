@@ -27,6 +27,7 @@ try {
             header('location:control_panel_user.php');
         } catch (exception $e) {
             header('location:error.php');
+            mail('nesspire00@gmail.com', 'Crash on the website', $e);
         }
     } else {
         //returns an error message if the userID is wrong
@@ -34,6 +35,7 @@ try {
     }
 } catch (exception $e) {
     header('location:error.php');
+    mail('nesspire00@gmail.com', 'Crash on the website', $e);
 }
 
 ob_flush();

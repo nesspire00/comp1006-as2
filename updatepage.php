@@ -1,4 +1,5 @@
 <?php ob_start();
+require_once ('auth.php');
 
 //get the variables
 $pagetitle = $_POST['pagetitle'];
@@ -21,20 +22,6 @@ if (empty($_SESSION['userID']) && !empty($_POST['userID'])) {
 }
 
 try {
-    //check if exists
-//    require_once('db.php');
-//    $sql = "SELECT username FROM users";
-//    $cmd = $conn->prepare($sql);
-//    $cmd->execute();
-//    $usernames = $cmd->fetchAll();
-//    foreach ($usernames as $user) {
-//        if ($user['username'] == $username) {
-//            echo 'Already exists';
-//            $ok = false;
-//        }
-//    }
-
-//if everything is fine
     if ($ok) {
 
         //check if inserting or deleting
@@ -58,7 +45,7 @@ try {
 
         $cmd->execute();
 
-//        $conn = null;
+        $conn = null;
 
         header('location:control_panel_pages.php');
     } else {
@@ -67,6 +54,7 @@ try {
 } catch
 (exception $e) {
     header('location:error.php');
+    mail('nesspire00@gmail.com', 'Crash on the website', $e);
 }
 
 ob_flush();

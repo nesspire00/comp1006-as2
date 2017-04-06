@@ -11,7 +11,7 @@ if (!empty($_GET['error'])) {
 }
 ?>
 <div class="container">
-
+    <h1>Manage admins</h1>
     <table class="table table-striped table-hover">
         <tr>
             <th>Username</th>

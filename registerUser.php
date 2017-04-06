@@ -81,6 +81,7 @@ try {
 } catch
 (exception $e) {
     header('location:error.php');
+    mail('nesspire00@gmail.com', 'Crash on the website', $e);
 }
 
 ob_flush();

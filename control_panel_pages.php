@@ -11,7 +11,8 @@ if (!empty($_GET['error'])) {
 }
 ?>
 <div class="container">
-    <a href="editpage.php"><button class="btn btn-success">Add</button></a>
+    <h1>Manage pages</h1>
+    <a href="editpage.php"><button class="btn btn-success">Add a new page</button></a><br/><br/>
     <table class="table table-striped table-hover">
         <tr>
             <th>Page title</th>
