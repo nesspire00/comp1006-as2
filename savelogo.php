@@ -1,4 +1,6 @@
 <?php
+session_start();
+require_once ('auth.php');
 
 // IF DELETE
 if (!empty($_GET['delete'])) {
