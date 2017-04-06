@@ -6,7 +6,7 @@ require_once('auth.php');
 // shows the error message if there was an error while deleting the user
 if (!empty($_GET['error'])) {
     if ($_GET['error']) {
-        echo '<div class="bg-danger"><p>There was an error while deleting the user!</p></div>';
+        echo '<div class="bg-danger"><p>There was an error while deleting the page!</p></div>';
     }
 }
 ?>

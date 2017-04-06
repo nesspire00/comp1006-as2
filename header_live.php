@@ -11,9 +11,13 @@
 <body>
 <nav class="navbar navbar-default">
     <ul class="nav navbar-nav">
-        <li><a href="default.php" class="navbar-brand">COMP1006 - Assignment 2</a></li>
 
         <?php
+        if(file_exists('logo/logo')) {
+            echo '<li><a href="default.php" class="navbar-brand" style="padding: 0;"><img src="logo/logo" width="200" height="50"></a></li>';
+        } else {
+            echo '<li><a href="default.php" class="navbar-brand">COMP1002 - Assignment 2</a></li>';
+        }
 
             require_once ('db.php');
             $sql = 'SELECT id, page_title FROM pages';
