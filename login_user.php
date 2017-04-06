@@ -28,6 +28,6 @@ if (password_verify($password, $user['password'])) {
     exit();
 }
 
-$conn = null;
+// $conn = null;
 
 ob_flush();
